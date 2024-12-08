@@ -1,70 +1,145 @@
-# Getting Started with Create React App
+# Task Management System 📝
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A task management system where users can register, create tasks, assign them to different users, and manage them efficiently with features like filtering, drag-and-drop task status updates, and real-time activity logs.
 
-## Available Scripts
+[Live](https://upaay-assignment.vercel.app/)
 
-In the project directory, you can run:
+[View Video](https://drive.google.com/file/d/1VjJwMr_4yhYuBpc61_Q_1tVJwkPV0xmv/view?usp=sharing)
 
-### `npm start`
+## Features ✨
+- **User Registration & Authentication** 🔐  
+  Users can register themselves to the platform and log in to access their dashboard.
+  
+- **Task Creation & Assignment** 🛠️  
+  Users can create tasks and assign them to other users.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Filter Tasks by Priority & Due Date** 🔎  
+  You can filter tasks based on priority and due date for better management.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Drag & Drop Task Management** 🖱️  
+  Drag tasks from one category to another based on the status (e.g., To Do, In Progress, Done).
 
-### `npm test`
+- **Real-Time Activity Log** 🕒  
+  Track all user activity in real-time to stay updated with ongoing tasks.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Screenshots 📸
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Task Management Dashboard](./frontend//src//assets//08.12.2024_08.57.57_REC.png)  
+_Screenshot of the task management dashboard._
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Task Creation Form](./frontend//src//assets//08.12.2024_08.57.23_REC.png)  
+_Screenshot of the task creation form._
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Tech Stack 💻
+- **Frontend**: React.js, Redux
+- **Backend**: Node.js, Express
+- **Database**: MongoDB
+- **Real-time**: Socket.io
+- **Authentication**: JWT (JSON Web Token)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Installation Instructions 🛠️
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Prerequisites
+Before you begin, ensure you have the following installed on your local machine:
 
-## Learn More
+- **Node.js** (v14 or above)  
+  Install Node.js from [nodejs.org](https://nodejs.org/).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **MongoDB** (local or cloud)  
+  Set up MongoDB locally or create a cloud instance using [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Steps to Run Locally 🚀
 
-### Code Splitting
+### 1️⃣ Clone the Repository
+Clone the repository to your local machine by running the following command:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+$ git clone https://github.com/Vicky8180/Upaay_Assignment
+$ cd Upaay_Assignment
+```
 
-### Analyzing the Bundle Size
+### 2️⃣ Install Dependencies for frontend
+```bash
+$ npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 3 Install Dependencies for backend
+```bash
+$ npm install
+```
+### 4 Environment variables configured in .env file for both frontend and backend
+```bash
+REACT_APP_BASE_URL_PORT="your backend server this is FOR FRONTEND .ENV" 
+JWT_SECRET_KEY=<"SECRECT_key this is FOR BACKEND .ENV">
+PORT=<" this is FOR BACKEND .ENV">
+MONGO_URL=<" MONGO_URL is FOR BACKEND .ENV">
+```
 
-### Making a Progressive Web App
+### 5 Start the Development Server
+```bash
+$ npm start
+```
+The app will be available at `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 6 Build for Production
+```bash
+$ npm run build
+```
+Your optimized app will be in the `build/` directory.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Usage 📊
 
-### Deployment
+- **Register**:  
+  Click on the "Register" button to create a new account.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **Login**:  
+  After registration, log in with your credentials to access the dashboard.
 
-### `npm run build` fails to minify
+- **Create a Task**:  
+  Click on the "Create Task" button, fill in the task details (e.g., title, description, due date, priority), and assign it to a user.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Filter Tasks**:  
+  Use the filters to sort tasks based on priority, due date, or status.
+
+- **Drag & Drop**:  
+  You can move tasks from one status category to another (e.g., from "To Do" to "In Progress" or "Completed").
+
+- **Activity Log**:  
+  View the real-time activity log that tracks user actions such as task creation, updates, and status changes.
+
+---
+
+## Contributing 🤝
+
+We welcome contributions! To contribute:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-name`).
+3. Make your changes and commit them (`git commit -am 'Add feature'`).
+4. Push to the branch (`git push origin feature-name`).
+5. Open a Pull Request to the main repository.
+
+---
+
+## License 📄
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## Acknowledgements 🙏
+
+- Icons made by [FontAwesome](https://fontawesome.com) and [Flaticon](https://www.flaticon.com).
+- [React.js](https://reactjs.org/)
+- [Socket.io](https://socket.io/)
+- [Node.js](https://nodejs.org/)
+- [MongoDB](https://www.mongodb.com/)

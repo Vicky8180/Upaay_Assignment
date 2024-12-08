@@ -1,0 +1,143 @@
+
+  
+  .navbar_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px 20px; */
+    /* background-color: #1d1f22;  */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    color: white;
+    height: 4vh;
+    /* width: 100%; */
+    padding: 2vh;
+    border-bottom: 1px solid rgba(219, 219, 219, 1);
+    align-items: center;
+  }
+ 
+  
+  .navbar_left {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    width: 40%;
+    padding-left: 4vh;
+  }
+  
+  .search {
+    padding: 1.3vh 2vh;
+    border: none;
+    border-radius: 2px;
+    background: rgba(245, 245, 245, 1);
+    color: #434a54;;
+    font-size: 1.6vh;
+    width: 40vh;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search:focus {
+    background: rgba(245, 245, 245, 1);
+    color: #434a54;;
+    outline: none;
+  }
+  
+  .navbar_right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5vh;
+    padding-right: 4vh;
+  }
+  
+  .n_r_first{
+    
+        display: flex;
+        align-items: center;
+        gap: 2vh;
+      
+  }
+  .n_r_second {
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+  }
+  
+  .n_r_first img{
+    width: 3vh;
+    height: 3vh;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  .n_r_second img {
+    width: 3.5vh;
+    height: 3.5vh;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .n_r_first img:hover,
+  .n_r_second img:hover {
+    transform: scale(1.1);
+  }
+  
+  .n_r_second_name {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+  }
+  
+  .upper_name,
+  .lower_name {
+    /* background-color: #434a54; */
+    width: 13vh;
+    height: 10px;
+    border-radius: 5px;
+    text-align:end;
+    
+    font-family: 'Inter', sans-serif; 
+  
+  }
+  
+  .n_r_second_name .upper_name {
+    margin-bottom: 0.8vh;
+    font-weight: 480;
+    font-size: 1.5vh;
+    color: rgb(31, 31, 31);;
+  
+  }
+  
+  .n_r_second_name .lower_name {
+    margin-bottom: 0.8vh;
+    font-weight: 320;
+    font-size: 1.4vh;
+    color: rgba(120, 116, 134, 1);;
+  }
+ 
+
+
+  
+  @media (max-width: 768px) {
+    .navbar_container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar_left {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .search {
+      width: 100%;
+    }
+  
+    .navbar_right {
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+  }
+  

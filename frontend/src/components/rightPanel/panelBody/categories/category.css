@@ -1,0 +1,152 @@
+
+.category_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 3vh;
+    padding: 3vh;
+    background-color: #ffffff;
+    border-radius: 12px;
+    width: 80%;
+    
+  }
+
+  .category_card {
+    background: rgba(245, 245, 245, 1);
+    ;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    border-radius: 12px;
+    width: 30%;
+    min-width: 35vh;
+    max-width: 40vh;
+    padding: 1.6vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .category_header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 1vh;
+    font-size: 1.6vh;
+   /* min-width: 300px; */
+    color: #333;
+  }
+  
+  .circular_dot {
+    width: 1vh;
+    height: 1vh;
+    border-radius: 50%;
+  }
+  
+
+  .to do {
+    background-color: #ff6b6b;
+  }
+  
+  .progress {
+    background-color: #f9a825;
+  }
+
+  .done {
+    background-color: #4caf50;
+  }
+  
+  .dummy {
+    flex-grow: 1;
+  }
+  
+  .count_div {
+    background-color: #e0e0e0;
+    color: #333;
+    font-size: 1.2vh;
+    font-weight: bold;
+    padding: 0.4vh 0.8vh;
+    border-radius: 50%;
+  }
+  
+.add_tasks{
+    display: flex;
+}
+
+  .horizontal_line {
+    width: 100%;
+    height: 0.22vh;
+    background: #e0e0e0;
+    margin: 1.6vh 0;
+  }
+  
+
+  .task_box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.2vh;
+    font-size: 1.4vh;
+    color: #555;
+    height: 58vh;
+    /* background-color: #4caf50; */
+  }
+  
+  .task_box{
+    width: 100%;  
+
+    overflow: scroll; 
+  }
+  
+  .task_box::-webkit-scrollbar {
+    display: none;  
+  }
+  
+  @media (max-width: 1600px) {
+    .category_container {
+        width: 90%;
+    }
+  
+  
+  }
+
+  @media (max-width: 768px) {
+    .category_container {
+      flex-direction: column;
+      gap: 16px;
+    }
+  
+    .category_card {
+      width: 100%;
+    }
+  }
+  
+
+
+
+  .dragging {
+    opacity: 0.8;
+    /* transform: scale(1.05);  */
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    background-color: #e3fcef; /* Light green background */
+    border: 2px solid #4caf50; /* Green solid border */
+    border-radius: 8px; /* Smooth rounded edges */
+    cursor: grabbing;
+  }
+  
+  .placeholder {
+    background-color: #f4f4f4; 
+    border: 2px dashed #dcdcdc; 
+    border-radius: 8px; 
+    height: 100px; 
+    transition: background-color 0.2s ease, border 0.2s ease;
+  }
+  
+
+
+.drag-over {
+  border:2px dashed rgba(80, 48, 229, 0.59);
+  background-color: rgba(80, 48, 229, 0.06);;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+
+

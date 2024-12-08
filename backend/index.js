@@ -12,7 +12,7 @@ db();
 
 const allowedOrigins = [
   "http://localhost:3000",
-  "https://taskmanager-topaz.vercel.app",
+  "https://upaay-assignment.vercel.app",
   "http://another-origin.com",
 ];
 
